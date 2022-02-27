@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 550px;
+  background-color: $backColor;
+  padding: 40px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  &__tag {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $primaryColor;
+    @include mobile {
+      padding-bottom: 10px;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 32px;
+    @include mobile {
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 27px;
+    }
+  }
+  &__desc {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    color: $primaryColor;
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+      padding-bottom: 100px;
+    }
+  }
+  &__price {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    color: $priceBg;
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  @include tablet {
+    max-width: 648px;
+  }
+  @include mobile {
+    width: 280px;
+    padding: 20px;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: $hoverColor;
+}

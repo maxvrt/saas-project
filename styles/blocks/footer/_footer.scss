@@ -1,0 +1,52 @@
+.footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 82px;
+  margin-top: 180px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  max-width: 1120px;
+  border-top: 2px solid #151515;
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__copy {
+    align-self: flex-end;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: $buttonColor;
+    @include tablet {
+      align-self: flex-start;
+      padding-top: 60px;
+    }
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+  @include postDesktop {
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 0;
+    padding-top: 60px;
+    max-width: 648px;
+    margin-top: 150px;
+  }
+  @include postTablet {
+    margin: 0 20px 0 20px;
+  }
+  @include mobile {
+    margin-top: 120px;
+    padding-top: 30px;
+    row-gap: 184px;
+  }
+}

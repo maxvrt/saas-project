@@ -1,0 +1,83 @@
+.form-send {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  color: $titleColor;
+  &__input {
+    border: 0;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    background-color: rgba(142, 142, 152, 0.2);
+    width: 330px;
+    height: 48px;
+    color: $titleColor;
+    padding-left: 16px;
+    @include tablet {
+      width: 53.5vw;
+    }
+    @include mobile {
+      width: 228px;
+      padding-left: 0;
+    }
+  }
+  &__input_footer {
+    @include tablet {
+      width: 330px;
+    }
+    @include mobile {
+      width: 226px;
+      padding-left: 0;
+    }
+  }
+  &__input:focus {
+    background-color: rgba(142, 142, 152, 0.3);
+  }
+  &__input:hover {
+    cursor: pointer;
+    background-color: rgba(142, 142, 152, 0.3);
+  }
+  &__button {
+    height: 50px;
+    width: 221px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: $buttonColor;
+    border: none;
+    @include mobile {
+      width: 51px;
+    }
+  }
+  &__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  &__button-text {
+    height: 50px;
+    max-width:190px;
+    white-space: nowrap;
+    color: $titleColor;
+    text-align: center;
+    letter-spacing: 0.375px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
+    overflow: hidden;
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      font-size: 0px;
+      height: 22px;
+    }
+  }
+  &__button-text::after {
+    content: '✌️';
+    padding-left: 7px;
+    padding-right: 8px;
+    @include mobile {
+      margin-left: -11px;
+      padding-top: 5px;
+      font-size: 11px;
+      line-height: 11px;
+    }
+  }
+
+}
