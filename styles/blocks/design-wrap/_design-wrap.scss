@@ -31,7 +31,7 @@
   &__last {
     width: 730px;
     height: 552px;
-    background-image: url(../../../images/photogr.jpg);
+    background-image: url(./../images/photogr.jpg);
     @include backgroundImg;
     @include postDesktop {
       width: 45vw;
@@ -71,7 +71,7 @@
   &__small {
     width: 448px;
     height: 230px;
-    background-image: url(../../../images/m2.jpg);
+    background-image: url(./../images/m2.jpg);
     @include backgroundImg;
     @include postDesktop {
       width: 31vw;
