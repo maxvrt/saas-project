@@ -1,0 +1,28 @@
+.form-wrap {
+  &__text {
+    margin: 0;
+    padding-top: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    color: $buttonColor;
+    padding-left: 11px;
+    text-align: start;
+    @include mobile {
+      padding-left: 2px;
+      padding-top: 10px;
+    }
+  }
+  &__text_footer {
+    padding-top: 16px;
+    padding-left: 1px;
+    @include tablet {
+      padding-top: 18px;
+    }
+    @include mobile {
+      padding-top: 10px;
+    }
+  }
+  @include tablet {
+    align-self: flex-start;
+  }
+}

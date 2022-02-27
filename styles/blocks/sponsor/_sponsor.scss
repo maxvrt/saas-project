@@ -1,0 +1,88 @@
+.sponsor {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding-top: 59px;
+  padding-bottom: 59px;
+  max-width: 1120px;
+  &__title {
+    @include title;
+    padding-bottom: 40px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+      padding-bottom: 10px;
+    }
+  }
+  &__title::after {
+    content: '🤝';
+    padding-left: 4px;
+    position: relative;
+    top: -5px;
+    font-size: 30px;
+    @include tablet {
+      position: relative;
+      top: -1px;
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__button {
+    background-color: $buttonColor;
+    border: none;
+    width: 306px;
+    height: 50px;
+    border-radius: 8px;
+    color: $titleColor;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.375px;
+    @include mobile {
+      width: 280px;
+      height: 50px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  &__text {
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    color: $primaryColor;
+    max-width: 1120px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: -10px;
+    }
+  }
+  @include postDesktop {
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 0;
+    padding-bottom: 59px;
+    padding-top: 60px;
+    row-gap: 40px;
+  }
+  @include mobile {
+    padding-bottom: 58px;
+  }
+}

@@ -1,0 +1,7 @@
+.cards {
+  @include flexRow;
+  padding-top: 60px;
+  @include mobile {
+    padding-bottom: 12px;
+  }
+}

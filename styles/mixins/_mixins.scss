@@ -1,0 +1,56 @@
+@mixin backgroundImg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  background-color: $openedColor;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+@mixin title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: $titleColor;
+}
+
+@mixin postDesktop {
+  @media (max-width: $postDesktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin postTablet {
+  @media (max-width: $postTablet) {
+    @content;
+  }
+}
+
+@mixin preMobile {
+  @media (max-width: $preMobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+

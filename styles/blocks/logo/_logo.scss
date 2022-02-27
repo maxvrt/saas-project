@@ -1,0 +1,50 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 22px;
+  align-items: center;
+  padding-left: 5px;
+  &__name {
+    margin: 0;
+    font-size: 22px;
+    line-height: 30px;
+    @include mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__opened {
+    margin: 0;
+    width: 99px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: $priceBg;
+    border-radius: 4px;
+    color: $openedColor;
+    text-align: center;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  &_footer {
+    padding-left: 1px;
+    padding-bottom: -8px;
+    @include mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  @include tablet {
+    padding-left: 0;
+  }
+  @include postTablet {
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+   }
+   @include mobile {
+    column-gap: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 0 0 0;
+  }
+}

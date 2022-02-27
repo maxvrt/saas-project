@@ -1,0 +1,76 @@
+.description-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__tagline {
+    margin: 0;
+    text-align: start;
+    align-self: flex-start;
+    font-size: 32px;
+    line-height: 40px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__tagline::after {
+    content: '👈';
+    padding-left: 4px;
+    position: relative;
+    top: -5px;
+    font-size: 30px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+      top: -2px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 32px;
+    line-height: 40px;
+    color: $primaryColor;
+    max-width: 1120px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include postDesktop {
+    padding: 15px;
+  }
+
+  @include tablet {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include mobile {
+    padding-top: 0;
+    row-gap: 20px;
+    padding-bottom: 10px;
+  }
+}

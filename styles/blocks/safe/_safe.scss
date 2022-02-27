@@ -1,0 +1,93 @@
+.safe {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
+  padding-top: 59px;
+  &__title {
+    @include title;
+    align-self: flex-start;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__title::after {
+    content: '⚡️';
+    padding-left: 4px;
+    position: relative;
+    top: -5px;
+    font-size: 28px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      top: -2px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__cards {
+    @include flexRow;
+    @include mobile {
+      padding-bottom: 10px;
+    }
+  }
+  &__card {
+    background-color: $backColor;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 265px;
+    font-size: 15px;
+    line-height: 19px;
+    @include tablet {
+      max-width: 314px;
+    }
+    @include mobile {
+      min-height: 148px;
+    }
+  }
+  &__card:hover {
+    cursor: pointer;
+    background-color: $hoverColor;
+  }
+  &__card-title {
+    margin: 0;
+    padding-bottom: 38px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #eaeaf0;
+    @include mobile {
+      padding-bottom: 36px;
+    }
+  }
+  &__card-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 19px;
+    color: $primaryColor;
+    @include mobile {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  @include postDesktop {
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 0;
+    padding-top: 59px;
+  }
+  @include mobile {
+    row-gap: 40px;
+  }
+}
