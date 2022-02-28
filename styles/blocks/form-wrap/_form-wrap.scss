@@ -13,13 +13,13 @@
     }
   }
   &__text_footer {
-    padding-top: 16px;
+    padding-top: 19px;
     padding-left: 1px;
     @include tablet {
       padding-top: 18px;
     }
     @include mobile {
-      padding-top: 10px;
+      padding-top: 8px;
     }
   }
   @include tablet {

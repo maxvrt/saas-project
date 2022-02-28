@@ -38,7 +38,7 @@
       padding: 15px 15px 0 15px;
       box-sizing: border-box;
     }
-    @include mobile {
+    @include preMobile {
       padding: 10px 0 0 0;
       font-size: 30px;
       line-height: 38px;
