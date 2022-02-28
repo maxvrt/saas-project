@@ -16,12 +16,18 @@
       width: 40vw;
       height: 40vw;
     }
-
     @include tablet {
       width: 173px;
       height: 344px;
     }
-
+    @include postTablet {
+      width: 85vw;
+      height: 20vw;
+    }
+    @include preMobile {
+      width: 85vw;
+      height: 20vw;
+    }
     @include mobile {
       width: 280px;
       height: 124px;
@@ -31,17 +37,17 @@
   &__last {
     width: 730px;
     height: 552px;
-    background-image: url(./../images/photogr.jpg);
+    background-image: url(./../images/photogr1.jpg);
     @include backgroundImg;
     @include postDesktop {
       width: 45vw;
+      background-size: cover;
     }
-
     @include tablet {
       width: 455px;
       height: 344px;
+      background-size: contain;
     }
-
     @include mobile {
       width: 280px;
       height: 211px;
@@ -56,12 +62,18 @@
     @include postDesktop {
       width: 55vw;
     }
-
     @include tablet {
       width: 180px;
       height: 230px;
     }
-
+    @include postTablet {
+      width: 85vw;
+      height: 20vw;
+    }
+    @include preMobile {
+      width: 85vw;
+      height: 20vw;
+    }
     @include mobile {
       width: 280px;
       height: 67px;
@@ -71,27 +83,25 @@
   &__small {
     width: 448px;
     height: 230px;
-    background-image: url(./../images/m2.jpg);
+    background-image: url(./../images/m-2.jpg);
     @include backgroundImg;
     @include postDesktop {
       width: 31vw;
+      background-size: cover;
     }
-
     @include tablet {
       width: 448px;
+      background-size: contain;
     }
-
     @include mobile {
       width: 280px;
       height: 142px;
       border-radius: 4px;
     }
   }
-
   @include tablet {
     padding: 18px 0 60px 0;
   }
-
   @include mobile {
     padding-top: 8px;
   }

@@ -46,11 +46,16 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.375px;
-    @include mobile {
+    @include preMobile {
+      padding:0;
       width: 280px;
       height: 50px;
       font-size: 12px;
       line-height: 18px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-top: 10px;
     }
   }
   &__button:hover{
@@ -70,7 +75,6 @@
     @include mobile {
       font-size: 12px;
       line-height: 18px;
-      margin-top: -10px;
     }
   }
   @include postDesktop {
@@ -84,5 +88,6 @@
   }
   @include mobile {
     padding-bottom: 58px;
+    row-gap: 31px;
   }
 }

@@ -6,7 +6,6 @@ formElements.forEach(el => el.addEventListener('input',  evt => {
     if (input.className.includes('form-send__input') && input.value.match(matching)){
       const form = el.closest('.form-send');
       const buttonTxt = form.querySelector('.form-send__button-text');
-      buttonTxt.innerText = 'Круто, спасибо за доверие!';
-      buttonTxt.styleSheets[0].addRule('p.special:before', 'content: "";');
+      buttonTxt.innerText = 'Круто, спасибо за доверие!\u00A0\u00A0\u00A0';
     }
 }));

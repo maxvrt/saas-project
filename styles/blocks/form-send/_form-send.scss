@@ -1,15 +1,17 @@
 .form-send {
   margin: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   color: $titleColor;
   &__input {
     border: 0;
+    padding: 0;
     border-radius: 8px 0px 0px 8px;
     outline: none;
     background-color: rgba(142, 142, 152, 0.2);
     width: 330px;
-    height: 48px;
+    height: 50px;
     color: $titleColor;
     padding-left: 16px;
     @include tablet {
@@ -17,16 +19,17 @@
     }
     @include mobile {
       width: 228px;
-      padding-left: 0;
+      padding-left: 8px;
+      box-sizing: border-box;
     }
   }
   &__input_footer {
     @include tablet {
       width: 330px;
     }
-    @include mobile {
+    @include postTablet {
       width: 226px;
-      padding-left: 0;
+      padding-left: 8px;
     }
   }
   &__input:focus {
@@ -42,7 +45,8 @@
     border-radius: 0px 8px 8px 0px;
     background-color: $buttonColor;
     border: none;
-    @include mobile {
+    overflow: hidden;
+    @include postTablet {
       width: 51px;
     }
   }
@@ -61,7 +65,8 @@
     line-height: 24px;
     padding-left: 10px;
     overflow: hidden;
-    @include mobile {
+
+    @include postTablet {
       display: flex;
       flex-direction: row;
       font-size: 0px;
@@ -72,7 +77,7 @@
     content: '✌️';
     padding-left: 7px;
     padding-right: 8px;
-    @include mobile {
+    @include postTablet {
       margin-left: -11px;
       padding-top: 5px;
       font-size: 11px;

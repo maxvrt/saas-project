@@ -22,7 +22,6 @@
       line-height: 18px;
     }
   }
-
   &__tagline::after {
     content: '👈';
     padding-left: 4px;
@@ -33,14 +32,12 @@
       font-size: 20px;
       line-height: 30px;
     }
-
     @include mobile {
       font-size: 12px;
       line-height: 18px;
       top: -2px;
     }
   }
-
   &__description {
     margin: 0;
     font-size: 32px;
@@ -51,23 +48,20 @@
       font-size: 20px;
       line-height: 30px;
     }
-    
+
     @include mobile {
       font-size: 12px;
       line-height: 18px;
     }
   }
-
   @include postDesktop {
     padding: 15px;
   }
-
   @include tablet {
     padding: 0;
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   @include mobile {
     padding-top: 0;
     row-gap: 20px;

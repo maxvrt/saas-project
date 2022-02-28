@@ -369,7 +369,7 @@ template {
     padding: 0 60px 0 60px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   .content {
     padding: 0 20px 0 20px;
   }
@@ -397,7 +397,7 @@ template {
     margin-bottom: 32px;
   }
 }
-@media (max-width: 728px) {
+@media (max-width: 767px) {
   .header {
     padding: 15px 15px 15px 15px;
     box-sizing: border-box;
@@ -428,7 +428,7 @@ template {
     line-height: 90px;
   }
 }
-@media (max-width: 728px) {
+@media (max-width: 767px) {
   .remont__title {
     padding: 15px 15px 0 15px;
     font-size: 50px;
@@ -454,7 +454,7 @@ template {
     line-height: 60px;
   }
 }
-@media (max-width: 728px) {
+@media (max-width: 767px) {
   .remont__text {
     padding-bottom: 0;
     font-size: 40px;
@@ -463,7 +463,7 @@ template {
     box-sizing: border-box;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   .remont__text {
     padding: 10px 0 0 0;
     font-size: 30px;
@@ -499,7 +499,7 @@ template {
   }
 }
 .form-wrap__text_footer {
-  padding-top: 16px;
+  padding-top: 19px;
   padding-left: 1px;
 }
 @media (max-width: 768px) {
@@ -509,7 +509,7 @@ template {
 }
 @media (max-width: 320px) {
   .form-wrap__text_footer {
-    padding-top: 10px;
+    padding-top: 8px;
   }
 }
 @media (max-width: 768px) {
@@ -565,7 +565,7 @@ template {
     padding-left: 0;
   }
 }
-@media (max-width: 728px) {
+@media (max-width: 767px) {
   .logo {
     padding: 15px 15px 0 15px;
     box-sizing: border-box;
@@ -583,17 +583,19 @@ template {
 
 .form-send {
   margin: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   color: #ffffff;
 }
 .form-send__input {
   border: 0;
+  padding: 0;
   border-radius: 8px 0px 0px 8px;
   outline: none;
   background-color: rgba(142, 142, 152, 0.2);
   width: 330px;
-  height: 48px;
+  height: 50px;
   color: #ffffff;
   padding-left: 16px;
 }
@@ -605,7 +607,8 @@ template {
 @media (max-width: 320px) {
   .form-send__input {
     width: 228px;
-    padding-left: 0;
+    padding-left: 8px;
+    box-sizing: border-box;
   }
 }
 @media (max-width: 768px) {
@@ -613,10 +616,10 @@ template {
     width: 330px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .form-send__input_footer {
     width: 226px;
-    padding-left: 0;
+    padding-left: 8px;
   }
 }
 .form-send__input:focus {
@@ -632,8 +635,9 @@ template {
   border-radius: 0px 8px 8px 0px;
   background-color: #47474c;
   border: none;
+  overflow: hidden;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .form-send__button {
     width: 51px;
   }
@@ -654,7 +658,7 @@ template {
   padding-left: 10px;
   overflow: hidden;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .form-send__button-text {
     display: flex;
     flex-direction: row;
@@ -667,7 +671,7 @@ template {
   padding-left: 7px;
   padding-right: 8px;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .form-send__button-text::after {
     margin-left: -11px;
     padding-top: 5px;
@@ -705,6 +709,18 @@ template {
     height: 344px;
   }
 }
+@media (max-width: 767px) {
+  .design-wrap__big {
+    width: 85vw;
+    height: 20vw;
+  }
+}
+@media (max-width: 520px) {
+  .design-wrap__big {
+    width: 85vw;
+    height: 20vw;
+  }
+}
 @media (max-width: 320px) {
   .design-wrap__big {
     width: 280px;
@@ -715,7 +731,7 @@ template {
 .design-wrap__last {
   width: 730px;
   height: 552px;
-  background-image: url(./../images/photogr.jpg);
+  background-image: url(./../images/photogr1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 10px;
@@ -724,12 +740,14 @@ template {
 @media (max-width: 1439px) {
   .design-wrap__last {
     width: 45vw;
+    background-size: cover;
   }
 }
 @media (max-width: 768px) {
   .design-wrap__last {
     width: 455px;
     height: 344px;
+    background-size: contain;
   }
 }
 @media (max-width: 320px) {
@@ -756,6 +774,18 @@ template {
     height: 230px;
   }
 }
+@media (max-width: 767px) {
+  .design-wrap__long {
+    width: 85vw;
+    height: 20vw;
+  }
+}
+@media (max-width: 520px) {
+  .design-wrap__long {
+    width: 85vw;
+    height: 20vw;
+  }
+}
 @media (max-width: 320px) {
   .design-wrap__long {
     width: 280px;
@@ -766,7 +796,7 @@ template {
 .design-wrap__small {
   width: 448px;
   height: 230px;
-  background-image: url(./../images/m2.jpg);
+  background-image: url(./../images/m-2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 10px;
@@ -775,11 +805,13 @@ template {
 @media (max-width: 1439px) {
   .design-wrap__small {
     width: 31vw;
+    background-size: cover;
   }
 }
 @media (max-width: 768px) {
   .design-wrap__small {
     width: 448px;
+    background-size: contain;
   }
 }
 @media (max-width: 320px) {
@@ -1104,7 +1136,7 @@ template {
 @media (max-width: 768px) {
   .safe {
     padding: 0;
-    padding-top: 59px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 320px) {
@@ -1175,12 +1207,19 @@ template {
   text-align: center;
   letter-spacing: 0.375px;
 }
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   .sponsor__button {
+    padding: 0;
     width: 280px;
     height: 50px;
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsor__button {
+    width: 100%;
+    margin-top: 10px;
   }
 }
 .sponsor__button:hover {
@@ -1204,7 +1243,6 @@ template {
   .sponsor__text {
     font-size: 12px;
     line-height: 18px;
-    margin-top: -10px;
   }
 }
 @media (max-width: 1439px) {
@@ -1223,6 +1261,7 @@ template {
 @media (max-width: 320px) {
   .sponsor {
     padding-bottom: 58px;
+    row-gap: 31px;
   }
 }
 
@@ -1247,6 +1286,11 @@ template {
 @media (max-width: 768px) {
   .footer__form {
     flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .footer__form {
+    margin-bottom: 20px;
   }
 }
 .footer__copy {
@@ -1278,9 +1322,10 @@ template {
     padding-top: 60px;
     max-width: 648px;
     margin-top: 150px;
+    row-gap: 84px;
   }
 }
-@media (max-width: 728px) {
+@media (max-width: 767px) {
   .footer {
     margin: 0 20px 0 20px;
   }
@@ -1289,6 +1334,6 @@ template {
   .footer {
     margin-top: 120px;
     padding-top: 30px;
-    row-gap: 184px;
+    row-gap: 183px;
   }
 }/*# sourceMappingURL=styles.css.map */

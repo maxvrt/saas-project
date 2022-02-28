@@ -17,6 +17,9 @@
     @include tablet {
       flex-direction: column;
     }
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
   &__copy {
     align-self: flex-end;
@@ -40,6 +43,7 @@
     padding-top: 60px;
     max-width: 648px;
     margin-top: 150px;
+    row-gap: 84px;
   }
   @include postTablet {
     margin: 0 20px 0 20px;
@@ -47,6 +51,6 @@
   @include mobile {
     margin-top: 120px;
     padding-top: 30px;
-    row-gap: 184px;
+    row-gap: 183px;
   }
 }
