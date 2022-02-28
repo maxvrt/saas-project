@@ -7,6 +7,5 @@ formElements.forEach(el => el.addEventListener('input',  evt => {
       const form = el.closest('.form-send');
       const buttonTxt = form.querySelector('.form-send__button-text');
       buttonTxt.innerText = 'Круто, спасибо за доверие!\u00A0\u00A0\u00A0';
-      buttonTxt.styleSheets[0].addRule('p.special:before', 'content: "";');
     }
 }));
